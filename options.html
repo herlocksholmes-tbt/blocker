@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tahribat.com User Blocker</title>
+    <style>
+        .nav {
+            font-size: 18px;
+            border-bottom: 1px solid black;
+            padding-bottom: 7px;
+            margin-bottom: 15px;
+        }
+
+        textarea#users {
+            width: 100%;
+            height: 50%;
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        #footer {
+            text-align: right;
+        }
+
+        button#save {
+            border: none;
+            color: white;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            cursor: pointer;
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <strong>Ayarlar</strong>
+    </div>
+    <div>
+        <input type="checkbox" name="hide_quotes" class="user-setting">
+        <label for="">Alıntı içeriklerini gizle</label>
+    </div>
+    <div>&nbsp;</div>
+    <div class="nav">
+        <strong>Tahribat.com User Blocker</strong>
+    </div>
+    <textarea name="users" id="users" cols="30" rows="10"></textarea>
+    <div id="footer">
+        <button id="save">Kaydet</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

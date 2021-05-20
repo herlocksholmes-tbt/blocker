@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tahribat.com</title>
+    <style>
+        .helpers {
+            margin: 5px 0;
+            text-align: right;
+        }
+
+        .helpers button {
+            border: none;
+            color: white;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .helpers button#options {
+            background-color: #008CBA;
+        }
+
+        .blocked-users {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        ul {
+            margin: 4px 0;
+            padding: 5px 0 0;
+            list-style: none;
+            height: 200px;
+            max-height: 200px;
+            overflow-y: scroll;
+            border-top: 1px solid black;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 23px;
+            display: block;
+            padding: 0px 5px;
+        }
+
+        ul li:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/setting-logo.png" />
+    <div class="helpers">
+        <button id="options">Ayarlar</button>
+    </div>
+    <div class="blocked-users">
+        <strong>Engellenen Üyeler</strong>
+        <ul id="userList"> </ul>
+    </div>
+    <script src="settings.js"></script>
+</body>
+
+</html>
